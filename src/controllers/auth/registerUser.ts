@@ -13,7 +13,7 @@ export const registerUser = async (
           firstName: req.body.firstName,
         },
         {
-          lastNaem: req.body.lastName,
+          lastName: req.body.lastName,
         },
       ],
     });

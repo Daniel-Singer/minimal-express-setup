@@ -13,19 +13,20 @@ const userSchema = new Schema(
     },
     firstName: {
       type: String,
-      required: true,
+      default: null,
     },
     lastName: {
       type: String,
-      required: true,
+      default: null,
     },
     email: {
       type: String,
-      default: null,
+      required: true,
     },
     password: {
       type: String,
-      default: null,
+      required: true,
+      select: false,
     },
   },
   {
