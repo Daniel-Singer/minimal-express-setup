@@ -14,24 +14,7 @@ type TUserSchema = Omit<TUser, 'orgId'> & {
 
 const userSchema = new Schema<TUserSchema, UserModel, UserMethods>(
   {
-    orgId: {
-      type: Schema.Types.ObjectId,
-      required: true,
-      select: false,
-    },
     userName: {
-      type: String,
-      required: true,
-    },
-    firstName: {
-      type: String,
-      default: null,
-    },
-    lastName: {
-      type: String,
-      default: null,
-    },
-    email: {
       type: String,
       required: true,
     },
